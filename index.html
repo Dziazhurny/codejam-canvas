@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodeJam Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="burger"></div>
+            <h1 class="title">CodeJam - Palette</h1>
+        </div>
+        <div class="choice"></div>
+    </header>
+    <main>
+        <section class="leftSection">
+            <div class="dashboard menu">
+                <div class="instrumentsPanel">
+                    <img src="./assets/images/bucket.svg" alt="" class="instrumentsImg">
+                    <span class="text">Fill bucket</span>
+                </div>
+                <div class="instrumentsPanel line">
+                    <img src="./assets/images/dropper.svg" alt="" class="instrumentsImg">
+                    <span class="text">Choose color </span>
+                </div>
+                <div class="instrumentsPanel">
+                    <img src="./assets/images/cross.svg" alt="" class="instrumentsImg">
+                    <span class="text">Move</span>
+                </div>
+                <div class="instrumentsPanel">
+                    <img src="./assets/images/arrows.svg" alt="" class="instrumentsImg">
+                    <span class="text">Transform</span>
+                </div>
+            </div>
+
+            <div class="colors menu">
+                <div class="colorsMenu">
+                    <div class="current"></div>
+                    <span class="text">Current color</span>
+                </div>
+                <div class="colorsMenu line">
+                    <div class="prev"></div>
+                    <span class="text">Prev color </span>
+                </div>
+                <div class="colorsMenu">
+                    <div class="red"></div>
+                    <span class="text">Red</span>
+                </div>
+                <div class="colorsMenu">
+                    <div class="blue"></div>
+                    <span class="text">Blue</span>
+                </div>
+            </div>
+        </section>
+        <section class="canvasBlock">
+            <canvas class="canvasSquare" id="canvas"></canvas>
+        </section>
+        <section class="radioPanel">
+            <div class="radio menu">
+                <div class="radioButton">
+                    <input type="radio" id="4x4" name="resolution" value="4x4">
+                    <label for="4x4" class="label">4x4</label>
+                </div>
+
+                <div class="radioButton">
+                    <input type="radio" id="32x32" name="resolution" value="32x32">
+                    <label for="32x32" class="label">32x32</label>
+                </div>
+
+                <div class="radioButton">
+                    <input type="radio" id="256x256" name="resolution" value="256x256">
+                    <label for="256x256" class="label">256x256</label>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/data/4x4.json"></script>
+    <script src="./assets/data/32x32.json"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
